@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'H4.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'booktest',
+        'USER': 'root',
+        'PASSWORD': 'z48107660K',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
